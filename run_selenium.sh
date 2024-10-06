@@ -105,17 +105,17 @@ print("Page URL:", browser.current_url)
 print("Page Title:", browser.title)
 
 
-try:
-    input("Continue?")
-except:
-    print("EOF")
+#try:
+#    input("Continue?")
+#except:
+#   print("EOF")
 
 
 EOF
 
 sleep 2
 
-python3 run_selenium.py
+python3 run_selenium.py &
 
 cat > randomnumber.py <<END
 from numpy import random
