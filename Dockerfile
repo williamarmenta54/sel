@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 WORKDIR /
 
-COPY requirement.txt ./
+COPY requirements.txt ./
 
 RUN apt update;apt -y install curl wget python3 python3-pip
 
