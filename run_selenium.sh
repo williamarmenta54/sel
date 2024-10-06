@@ -115,8 +115,6 @@ EOF
 
 sleep 2
 
-ls -la
-
 python3 run_selenium.py
 
 cat > randomnumber.py <<END
@@ -135,6 +133,10 @@ for y in zero_to_infinity():
     time.sleep(5)
 
 END
+
+sleep 2
+
+ls -la
 
 sleep 2
 
