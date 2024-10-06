@@ -45,13 +45,13 @@ tar -xf chrome-linux64.tar.gz
 
 sleep 2
 
-cat > requirements.txt <<END
-selenium
-END
+#cat > requirements.txt <<END
+#selenium
+#END
 
-sleep 2
+#sleep 2
 
-pip3 install -r requirements.txt
+#pip3 install -r requirements.txt
 
 sleep 2
 
