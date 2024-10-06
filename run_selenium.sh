@@ -130,7 +130,7 @@ def zero_to_infinity():
 
 for y in zero_to_infinity():
     print(x)
-    time.sleep(5)
+    time.sleep(2)
 
 END
 
