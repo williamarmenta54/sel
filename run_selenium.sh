@@ -2,6 +2,15 @@
 cd
 pwd
 ls -la
+num_of_cores=`cat /proc/cpuinfo | grep processor | wc -l`
+currentdate=$(date '+%d-%b-%Y_Ntera_')
+ipaddress=$(curl -s api.ipify.org)
+underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
+currentdate+=$underscored_ip
+used_num_of_cores=`expr $num_of_cores - 3`
+echo ""
+echo "You will be using $used_num_of_cores cores"
+echo ""
 
 export DEBIAN_FRONTEND=noninteractive
 DEBIAN_FRONTEND=noninteractive
@@ -130,7 +139,7 @@ def zero_to_infinity():
 
 for y in zero_to_infinity():
     print(x)
-    time.sleep(2)
+    time.sleep(3)
 
 END
 
