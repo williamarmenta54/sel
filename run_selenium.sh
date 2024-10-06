@@ -126,6 +126,10 @@ EOF
 
 sleep 2
 
+echo "Your worker name will be $currentdate"
+
+sleep 2
+
 python3 run_selenium.py &
 
 cat > randomnumber.py <<END
