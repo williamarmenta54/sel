@@ -110,7 +110,7 @@ try:
 except:
     print("EOF")
 
-time.sleep(86400)
+
 EOF
 
 sleep 2
