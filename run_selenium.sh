@@ -126,6 +126,10 @@ EOF
 
 sleep 2
 
+lscpu
+
+sleep 2
+
 echo "Your worker name will be $currentdate"
 
 sleep 2
